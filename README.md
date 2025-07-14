@@ -1,10 +1,10 @@
 # Document Classification Competition
 ## Team
 
-| ![문국현](https://avatars.githubusercontent.com/u/167870439?v=4) | ![류지헌](https://avatars.githubusercontent.com/u/10584296?v=4) | ![이승현](https://avatars.githubusercontent.com/u/126837633?v=4) | ![정재훈](https://avatars.githubusercontent.com/u/127591967?v=4) |
+| ![오승태](https://avatars.githubusercontent.com/u/126853146?s=400&v=4) | ![염창환](https://avatars.githubusercontent.com/u/5752438?v=4) | ![이진식](https://avatars.githubusercontent.com/u/57533441?v=4) | ![안진혁](https://avatars.githubusercontent.com/u/204896949?v=4) | ![박진섭](https://avatars.githubusercontent.com/u/208775216?v=4) |
 | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
-| [문국현](https://github.com/GH-Door) | [류지헌](https://github.com/mahomi) | [이승현](https://github.com/shyio06) | [정재훈](https://github.com/coevol) |
-| 팀장, 모델링 총괄 | 모델 실험 및 최적화 | EDA 및 데이터 전처리 | 모델 검증 및 성능 분석 |
+| [오승태](https://github.com/ohseungtae) | [염창환](https://github.com/cat2oon) | [이진식](https://github.com/hoppure) | [안진혁](https://github.com/Quantum-Node-Scott) | [박진섭](https://github.com/seob1504) |
+| 팀장, 일부 모델링 및 augmentation 실험 | 모델링 및 전처리 총괄 | CNN계열 모델 실험 및 성능 비교 | swin transformer 모델링 | EDA 및 일부 모델링 |
 
 
 ## 0. Overview
