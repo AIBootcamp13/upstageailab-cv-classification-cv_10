@@ -1,0 +1,21 @@
+{
+    "document_classes": [
+        "account_number",
+        "application_for_payment_of_pregnancy_medical_expenses",
+        "car_dashboard",
+        "confirmation_of_admission_and_discharge",
+        "diagnosis",
+        "driver_lisence",
+        "medical_bill_receipts",
+        "medical_outpatient_certificate",
+        "national_id_card",
+        "passport",
+        "payment_confirmation",
+        "pharmaceutical_receipt",
+        "prescription",
+        "resume",
+        "statement_of_opinion",
+        "vehicle_registration_certificate",
+        "vehicle_registration_plate"
+    ]
+}
