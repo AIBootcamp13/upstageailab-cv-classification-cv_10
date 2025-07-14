@@ -10,13 +10,13 @@
 ## 0. Overview
 
 본 프로젝트는 **Upstage AILAB Computer Vision Class - CV Classification 과제**를 기반으로 진행된 이미지 분류 프로젝트입니다.  
-다양한 이미지 증강(Augmentation) 기법과 모델 앙상블 전략을 활용하여, 주어진 이미지 데이터를 10개의 클래스 중 하나로 분류하는 고성능 모델을 구축하는 것을 목표로 하였습니다.
+다양한 이미지 증강(Augmentation) 기법과 모델 앙상블 전략을 활용하여, 주어진 이미지 데이터를 17개의 클래스 중 하나로 분류하는 고성능 모델을 구축하는 것을 목표로 하였습니다.
 
 이 리포지토리에는 전체 학습 파이프라인, 데이터 분석(EDA), 전처리 과정, 모델 실험 기록 및 결과가 포함되어 있습니다.
 
 ### Environment
 
-- OS: Ubuntu 20.04 / Linux 기반 GPU 서버
+- OS: Linux 기반 GPU 서버
 - Python: 3.10+
 - CUDA: 11.8
 - PyTorch: 2.1.0
@@ -158,12 +158,12 @@ upstageailab-cv-classification-cv_10/
 #### 📄 `train.csv`
 - 각 이미지의 **ID**와 **클래스 라벨 번호** 제공
 - 총 1,570행
-![train](https://aistages-api-public-prod.s3.amazonaws.com/app/Files/832b4982-bd93-4480-936f-3c93a1aee98b.png)
+
 
 #### 📄 `meta.csv`
 - 클래스 번호(`target`)와 해당 이름(`class_name`) 매핑 정보
 - 총 17행
-![meta](https://aistages-api-public-prod.s3.amazonaws.com/app/Files/d4b872ca-b669-4166-b146-5ce12af01deb.png)
+
 
 
 ### 평가 데이터 구성
@@ -176,7 +176,7 @@ upstageailab-cv-classification-cv_10/
 - 총 3,140행 (Test 이미지와 동일 수)
 - `target` 값은 전부 0으로 채워져 있음 (예측값 입력 필요)
 
-![sample_submission](https://aistages-api-public-prod.s3.amazonaws.com/app/Files/86c6b7ed-f8a4-4909-a614-a8d3bdfc94a7.png)
+
 
 - 그 밖에 평가 데이터는 학습 데이터와 달리 랜덤하게 Rotation 및 Flip 등이 되었고 훼손된 이미지들이 존재함
 
@@ -233,30 +233,21 @@ upstageailab-cv-classification-cv_10/
 ### Modeling Process
 
 #### 1. 베이스라인 모델 (ResNet34)
-- **목적**: 기본 성능 확인 및 파이프라인 검증
-- **이미지 크기**: 32×32 (초기 테스트)
-- **성능**: 기본적인 분류 성능 확인
-
-#### 2. EfficientNet 시리즈 실험
-- **EfficientNet-B3**: 첫 번째 주요 모델
-- **EfficientNetV2-L/XL, Convnext**: 대용량 모델로 성능 향상
-- **이미지 크기**: 320×320 → 480×480 (점진적 증가)
-- **배치 크기**: 32 → 16 (메모리 효율성 고려)
+....
 
 
 
-#### 4. 데이터 증강 및 TTA
-- **훈련 시 증강**: 
+#### 4. 데이터 증강 
+- **albumentation**: 
   - 회전 (±10도)
   - 밝기/대비 조정
   - 가우시안 노이즈 추가
   - 크기 조정 및 크롭
-- **TTA (Test Time Augmentation)**:
-  - 원본 이미지
-  - 수평 뒤집기
-  - 경미한 회전
-  - 밝기 조정
-
+- **augrapy**: 
+  - 회전 (±10도)
+  - 밝기/대비 조정
+  - 가우시안 노이즈 추가
+  - 크기 조정 및 크롭
 #### 5. 최적화 전략
 - **손실 함수**: CrossEntropyLoss
 - **옵티마이저**: Adam (학습률 0.001)
@@ -265,10 +256,7 @@ upstageailab-cv-classification-cv_10/
 - **모델 저장**: 최고 F1 점수 기준 모델 저장
 
 #### 6. 성능 향상 기법
-- **클래스 불균형 대응**: 가중치 조정 및 소수 클래스 증강
-- **캐싱 시스템**: 증강된 이미지 캐싱으로 학습 속도 향상
-- **배치 정규화**: 안정적인 학습을 위한 정규화
-- **드롭아웃**: 과적합 방지
+
 
 ## 5. Result
 
