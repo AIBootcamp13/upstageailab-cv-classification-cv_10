@@ -1,7 +1,7 @@
 # Document Classification Competition
 ## Team
 | <img src="https://avatars.githubusercontent.com/u/126853146?s=400&v=4" width="100"/> | <img src="https://avatars.githubusercontent.com/u/5752438?v=4" width="100"/> | <img src="https://avatars.githubusercontent.com/u/57533441?v=4" width="100"/> | <img src="https://avatars.githubusercontent.com/u/204896949?v=4" width="100"/> | <img src="https://avatars.githubusercontent.com/u/208775216?v=4" width="100"/> | 
-| :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------: |
+| :------------------------------------------: | :------------------------------------------: | :------------------------------------------: | :------------------------------------------: || :------------------------------------------: |
 | [오승태](https://github.com/ohseungtae) | [염창환](https://github.com/cat2oon) | [이진식](https://github.com/hoppure) | [안진혁](https://github.com/Quantum-Node-Scott) | [박진섭](https://github.com/seob1504) |
 | 팀장, 일부 모델링 및 augmentation 실험 | 모델링 및 전처리 총괄 | CNN계열 모델 실험 및 성능 비교 | swin transformer 모델링 | EDA 및 일부 모델링 |
 
