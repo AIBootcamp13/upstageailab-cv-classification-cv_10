@@ -411,8 +411,6 @@ upstageailab-cv-classification-cv_10/
 
 | 모델 | 이미지 크기 | 전처리버전  | 검증 F1 | 리더보드 |
 |------|-------------|---------|---------|----------|
-
-
 | ConvnextV2-large | 384×384 | ver3 | 0.9291 | **0.9396** |
 
 ### Presentation
