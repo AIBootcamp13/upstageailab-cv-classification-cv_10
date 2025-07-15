@@ -3,7 +3,7 @@
 | <img src="https://avatars.githubusercontent.com/u/126853146?s=400&v=4" width="100"/> | <img src="https://avatars.githubusercontent.com/u/5752438?v=4" width="100"/> | <img src="https://avatars.githubusercontent.com/u/57533441?v=4" width="100"/> | <img src="https://avatars.githubusercontent.com/u/204896949?v=4" width="100"/> | <img src="https://avatars.githubusercontent.com/u/208775216?v=4" width="100"/> |
 |:--------------------:|:--------------------:|:--------------------:|:--------------------:|:--------------------:|
 | [오승태](https://github.com/ohseungtae) | [염창환](https://github.com/cat2oon) | [이진식](https://github.com/hoppure) | [안진혁](https://github.com/Quantum-Node-Scott) | [박진섭](https://github.com/seob1504) |
-| 팀장<br/>모델링 및<br/>augmentation 실험 | OCR 및<br/>모델링 총괄 | CNN계열 모델<br/>실험 및 성능 비교 | swin transformer<br/>모델링 | EDA 및<br/>일부 모델링 |
+| 팀장<br/>모델링 및<br/>augmentation 실험 | OCR 및<br/>모델링 총괄 | CNN계열 모델<br/>실험 및 성능 비교 | swin transformer v2<br/>모델링 | EDA 및<br/>일부 모델링 |
 
 
 
@@ -58,7 +58,7 @@ upstageailab-cv-classification-cv_10/
 │   ├── pdf
 │   │   └── Upstage AI LAB 4기_10조_발표자료.pdf
 ├── AJH/      # [ajh] project work
-│   ├── swin_base.ipynb # swin transformer 모델
+│   ├── swin_base.ipynb # swin transformer v2 모델
 ├── chy/     # [chy] project work
 │   ├── augs/ # augumentation 실험
 │   │   ├── augs.ipynb
@@ -233,7 +233,7 @@ upstageailab-cv-classification-cv_10/
 - **vit_large** : VIT 아키텍쳐의 기본모델
 - **ConvNeXtV2-Base**: 개선된 ConvNeXt 아키텍처의 기본 모델
 - **ConvNeXtV2-Large**: 개선된 ConvNeXt 아키텍처의 대용량 모델
-- **Swin transformer**: Shifted Window Attention기반의 VIT 아키텍처의 모델
+- **Swin transformer v2**: Shifted Window Attention기반의 VIT 아키텍처의 모델
 - **Layoutlmv3** : 텍스트, 레이아웃, 이미지 정보를 동시에 처리할 수 있는 모델
 
 #### 모델 선택 이유
@@ -292,7 +292,7 @@ upstageailab-cv-classification-cv_10/
 - **vit_large** : VIT 아키텍쳐의 기본모델
 - **ConvNeXtV2-Base**: 개선된 ConvNeXt 아키텍처의 기본 모델
 - **ConvNeXtV2-Large**: 개선된 ConvNeXt 아키텍처의 대용량 모델
-- **Swin transformer**: Shifted Window Attention기반의 VIT 아키텍처의 모델
+- **Swin transformer v2**: Shifted Window Attention기반의 VIT 아키텍처의 모델
 - **Layoutlmv3** : 텍스트, 레이아웃, 이미지 정보를 동시에 처리할 수 있는 모델
 
 #### 모델 선택 이유
@@ -406,7 +406,7 @@ upstageailab-cv-classification-cv_10/
 - **리더보드**
   - mid score: 0.9799
   - final score: 0.9694
-- **모델 구성**: Convnext2large + layoutlmv3 + swin transformer + text classifier
+- **모델 구성**: Convnext2large + layoutlmv3 + swin transformer v2 + text classifier
 
 
 #### 실험 결과 요약
@@ -417,6 +417,7 @@ upstageailab-cv-classification-cv_10/
 | vit_base_patch16_clip | 224×224 | ver3 | 0.9221 | **0.9337** |
 | Convnext-large | 224×224 | ver3 | 0.959 | **0.9401** |
 | vit_large | 224×224 | ver3 | 0.955 | **0.9152** |
+| swin-trasnfer v2 | 224x224 | ver3 | 0.9161 | **0.9016** |
 
 ### Presentation
 
