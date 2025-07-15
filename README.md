@@ -229,7 +229,8 @@ upstageailab-cv-classification-cv_10/
 #### 사용된 모델 아키텍처
 (여기에 사용한 모델 더 넣어주길 바람)
 - **ResNet-34**: 초기 베이스라인 모델로 사용
-- 
+- **vit_base_patch16_clip_224.laion2b_ft_in1k** : Vision Transformer (ViT) 기반의 contrastive learning으로 학습된 모델
+- **vit_large** : VIT 아키텍쳐의 기본모델
 - **ConvNeXtV2-Base**: 개선된 ConvNeXt 아키텍처의 기본 모델
 - **ConvNeXtV2-Large**: 개선된 ConvNeXt 아키텍처의 대용량 모델
 - **Swin transformer**: Shifted Window Attention기반의 VIT 아키텍처의 모델
@@ -288,6 +289,7 @@ upstageailab-cv-classification-cv_10/
 (여기에 사용한 모델 더 넣어주길 바람)
 - **ResNet-34**: 초기 베이스라인 모델로 사용
 - **vit_base_patch16_clip_224.laion2b_ft_in1k** : Vision Transformer (ViT) 기반의 contrastive learning으로 학습된 모델
+- **vit_large** : VIT 아키텍쳐의 기본모델
 - **ConvNeXtV2-Base**: 개선된 ConvNeXt 아키텍처의 기본 모델
 - **ConvNeXtV2-Large**: 개선된 ConvNeXt 아키텍처의 대용량 모델
 - **Swin transformer**: Shifted Window Attention기반의 VIT 아키텍처의 모델
@@ -412,6 +414,9 @@ upstageailab-cv-classification-cv_10/
 | 모델 | 이미지 크기 | 전처리버전  | 검증 F1 | 리더보드 |
 |------|-------------|---------|---------|----------|
 | ConvnextV2-large | 384×384 | ver3 | 0.9291 | **0.9396** |
+| vit_base_patch16_clip | 224×224 | ver3 | 0.9221 | **0.9337** |
+| Convnext-large | 224×224 | ver3 | 0.959 | **0.9401** |
+| vit_large | 224×224 | ver3 | 0.955 | **0.9152** |
 
 ### Presentation
 
