@@ -287,7 +287,7 @@ upstageailab-cv-classification-cv_10/
 #### 사용된 모델 아키텍처
 (여기에 사용한 모델 더 넣어주길 바람)
 - **ResNet-34**: 초기 베이스라인 모델로 사용
-- 
+- **vit_base_patch16_clip_224.laion2b_ft_in1k** : Vision Transformer (ViT) 기반의 contrastive learning으로 학습된 모델
 - **ConvNeXtV2-Base**: 개선된 ConvNeXt 아키텍처의 기본 모델
 - **ConvNeXtV2-Large**: 개선된 ConvNeXt 아키텍처의 대용량 모델
 - **Swin transformer**: Shifted Window Attention기반의 VIT 아키텍처의 모델
